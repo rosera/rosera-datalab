@@ -34,7 +34,7 @@ We are now within the container and we can see that our user shown as part of th
 
 Ensure the container has the updates applied.
 
-    apt -get update && apt-get upgrade
+    apt-get update && apt-get upgrade
 
 - Docker installation [link](https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce-1)
 - GCloud SDK [link](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu)
