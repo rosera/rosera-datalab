@@ -5,7 +5,7 @@
 IMAGE=gcr.io/cloud-datalab/datalab:latest
 DATALAB_IMAGE=gcr.io/cloud-datalab/datalab
 DATALAB_TAG=latest
-CONTENT=${HOME}/code/training-data-analyst # your git repo
+CONTENT=${HOME}/rosera-datalab/code # your git repo
 PROJECT_ID=$(gcloud config get-value project)
 
 # Check if the Docker image has already been downloaded
