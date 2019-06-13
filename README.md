@@ -14,28 +14,28 @@ Personally when I am experimenting with new configurations, I like to  do this i
 
 To begin, lets create a new vm named sandbox. We will conduct our test in this VM and attempt to isolate any changes to this environment.
 
-    ```vmc start sandbox ```
+```vmc start sandbox ```
     
 We are now working within our VM. Let’s commence experimentation by making a Linux container. In this instance we will create a container based on the debian stretch operating system and name it “datalab”.
 
-    ```lxc launch image:debian/stretch datalab ```
+```lxc launch image:debian/stretch datalab ```
     
 Once the image has been downloaded, we should be able to see the list of existing containers using the following command:
 
-    ```lxc list ```
+```lxc list ```
 
 Note: the container will not automatically be started once created. 
 
 To start the container and perform some configuration, use the following command:
 
-    ```lxc exec datalab /bin/bash ```
+```lxc exec datalab /bin/bash ```
     
     
 We are now within the container and we can see that our user shown as part of the command line has changed now root@datalab.
 
 Ensure the container has the updates applied.
 
-    ```apt-get update && apt-get upgrade ```
+```apt-get update && apt-get upgrade ```
     
 - Docker installation [link](https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce-1)
 - GCloud SDK [link](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu)
